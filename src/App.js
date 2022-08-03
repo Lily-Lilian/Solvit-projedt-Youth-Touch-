@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Bottom from './mainpage/Bottompage';
+import Toppage from './mainpage/Top-page';
+import Nopage from './pages/Nopage';
+import {Routes ,Route} from "react-router-dom";
+import About  from "./pages/About/About";
+import Contact from "./pages/Contact";
+// import Home from "./pages/Home";
+import Sign from "./pages/Sign";
+// import Contact from './pages/Contact'
+// import Lower from "./mainpage/Lower";
+import "bootstrap/dist/css/bootstrap.min.css";
+// import Auth from './Auth';
+// import Login from './containers/Login';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <About/>
+      <Routes>
+        <Route index path="/" element={<><Toppage/> <Bottom/></>}/>
+        <Route path='/sign' element={<Sign />}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path="*" element={<Nopage/>}/>
+        {/* <Route path='/Login' element={<Login/>}/> */}
+        {/* <Route path="/auth" element={<Auth />} /> */}
+      </Routes>
     </div>
   );
 }

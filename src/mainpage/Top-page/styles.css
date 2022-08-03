@@ -1,0 +1,127 @@
+.Toppage{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+/* line-height: 27px; */
+text-transform: capitalize;
+color: #042C7B;
+text-underline-position: unset;
+width: 100%;
+overflow: hidden;
+
+}
+
+.nav li{
+    display: inline-block;
+    padding: 20px;
+    cursor:pointer;
+
+
+    
+}
+li:hover {
+    background-color:#54BAB9;
+  }
+.content{
+display: block;
+position: absolute;
+width: 569px;
+height: 190px;
+left: 81px;
+top: 202px;
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+color: #474747;
+
+}
+p{
+position: absolute;
+width: 569px;
+height: 190px;
+left: 81px;
+top: 142px;
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 40px;
+/* or 167% */
+color: #474747;
+}
+
+.content a{
+  position: absolute;
+  width: 267px;
+  height: 50px;
+  left: 80px;
+  top: 356px;
+  background: #042C7B;
+
+}
+
+.left-picture {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 800px;
+    top:5px;
+    /* position: left; */
+    z-index: 10;
+}
+.image{
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; 
+  height: 100%;
+  width: auto;
+  position:left;
+  
+}
+#Youth{
+position: absolute;
+width: 403px;
+height: 130px;
+left: 125px;
+top: 10px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 54px;
+line-height: 65px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+color: #042C7B;
+
+}
+.Logo{
+  position:absolute;
+  width: 230px;
+  height: 195px;
+  left: -40px;
+   margin-top:-110px;
+   
+}
+
+.blue{
+position: absolute;
+width: 350px;
+height: 350px;
+left: 1040px;
+/* top: -159px; */
+bottom: 280px;
+background-color: #042C7B;
+border-radius: 50%;
+overflow: hidden;
+z-index: 1;
+
+
+}
